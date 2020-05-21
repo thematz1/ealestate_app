@@ -1,0 +1,6 @@
+    TO-DO:
+        * document and 
+        * build centris scraper function
+            - setup utilities for firefox selenium combo
+            - setup plugin for canvas noise
+        * build database connetor

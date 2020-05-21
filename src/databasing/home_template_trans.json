@@ -1,0 +1,51 @@
+{"header_properties" : { 
+    "_id": {"mls": Integer},
+    "address": address,
+    "year_built": int,
+    "land_size": int,  
+    "building_type": string or null,
+    "property_type": string
+    },
+
+"address" : {"house_num": string or int32,
+           "street": string,
+           "neighbourhood": string or null,
+           "city": string,
+           "region": string,
+           "geo_points": [{"lng": float, "lat": float}]
+        },
+
+"price" : {"net": int,
+           "gross": decimal or float,
+           "tax": decimal or float},
+           "estimations" : {"estimated_cost": {"repair": decimal or float,
+                                               "transfer": decimal or float,
+                                               "intrest": decimal or float,
+                                               "sunken": decimal or float},
+                           "estimated_profit": {"net": decimal or float,
+                                                "gross": decimal or float,
+                                                "tax": decimal or float}},
+
+
+"tvm_estimations" : {"short": estimations,
+                     "medium": estimations,
+                     "long": estimations},
+
+"investment_details" : {
+                        "_id": string, primary_key,
+                        "price": price,
+                        "money_estimations": {
+                            "short": tvm_estimations.short,
+                            "medium": tvm_estimations.medium,
+                            "long": tvm_estimations.long,
+   },
+},
+
+"home_unique_features" : {
+                        "bedrooms": int,
+                        "bathrooms": int,
+                        "additional": [  # programmatic list of dictionaries from
+                        # with unstructured features. Experimental data
+                        ]
+    }
+}

@@ -1,0 +1,43 @@
+{"header_properties" : { 
+    "_id": {"mls": 218537979},
+    "year_built": 1973,
+    "land_size": 2895,  
+    "building_type": "Bungalow, Detached",
+    "property_type": "single-honme"
+    },
+
+"address" : {"house_num": 77,
+           "street": "60e Avenue",
+           "neighbourhood": "Repontiny",
+           "city": "Quebec",
+           "region": "Saint-Paul-de-l'Île-aux-Noix",
+           "geo_points": [{"lng": 73.27522893, "lat": 45.12614191}]
+        },
+
+"price" : {"net": 359900,
+           "gross": 450000.92,
+           "tax": 9100.56},
+           "estimations" : {"estimated_cost": {"repair": 15020.20,
+                                               "transfer": 2000.00,
+                                               "sunken":35020.20},
+                           "estimated_profit": {"net": 10010.45,
+                                                "gross": 8320.10,
+                                                "tax": 1679.90}},
+
+
+"investment_details" : {
+                        "_id": {"mls": 218537979},
+                        "money_estimations": {
+                            "short": 4492.19,
+                            "medium": 15921.23,
+                            "long": 30002.10
+   }
+},
+
+"home_unique_features" : {
+                        "bedrooms": 5,
+                        "bathrooms": 2,
+                        "additional": [  {"pool": "inground"}
+                        ]
+    }
+}
